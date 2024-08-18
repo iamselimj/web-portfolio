@@ -1,7 +1,8 @@
 import { Icons } from "@/components/icons";
-import { CodeIcon, HomeIcon, NotebookIcon } from "lucide-react";
+import { Data } from "@/types";
+import { CodeIcon, HomeIcon, LucideIcon, NotebookIcon } from "lucide-react";
 
-export const DATA: any = {
+export const DATA: Data = {
   name: "Selim Jacquet",
   initials: "SJ",
   url: "localhost:3000",
@@ -35,21 +36,19 @@ export const DATA: any = {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/iamselimj",
-        icon: Icons.github,
-
+        icon: Icons.github as LucideIcon,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/iamselimj/",
-        icon: Icons.linkedin,
-
+        icon: Icons.linkedin as LucideIcon,
         navbar: true,
       },
       email: {
         name: "Send Email",
         url: "mail:iamselimj@proton.me",
-        icon: Icons.email,
+        icon: Icons.email as LucideIcon,
         navbar: true,
       },
     },

@@ -128,10 +128,8 @@ export default function Page() {
                   <CertificationCard
                     title={project.title}
                     description={project.description}
-                    location={project.location}
                     dates={project.dates}
                     image={project.image}
-                    links={project.links}
                   />
                 </BlurFade>
               ))}
