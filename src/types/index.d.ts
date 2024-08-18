@@ -62,9 +62,9 @@ interface Project {
   video: string;
 }
 
-interface Hackathon {
+interface Certifcation {
   title: string;
-  dates: string;
+  state: string;
   description: string;
   image: string;
   links: string[];
@@ -85,5 +85,5 @@ interface Data {
   work: WorkExperience[];
   education: Education[];
   projects: Project[];
-  hackathons: Hackathon[];
+  certifications: Certifcation[];
 }

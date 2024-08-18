@@ -1,18 +1,18 @@
 import { Icons } from "@/components/icons";
 import { Data } from "@/types";
-import { CodeIcon, HomeIcon, LucideIcon, NotebookIcon } from "lucide-react";
+import { CodeIcon, HomeIcon, LucideIcon } from "lucide-react";
 
 export const DATA: Data = {
   name: "Selim Jacquet",
   initials: "SJ",
-  url: "localhost:3000",
+  url: "https://iamselimj.vercel.app",
   location: "Brussels, BE",
   locationLink: "https://www.google.com/maps/place/brussels",
   description:
-    "Full-Stack TypeScript Developer based in Brussels.",
+    "The Modern Full-Stack TypeScript Developer",
   summary:
     "I'm a self-taught full stack developer. I've learned everything by myself after work & during my free times, using all the free & paid ressources at my disposal. I followed a lot of tutorials on YouTube, some paid courses with the best teacher in the world and of course, a lot of pratical exercices & projects, not to mention the hours spent reading documentation and debugging code.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     "React",
     "Next.js",
@@ -26,7 +26,10 @@ export const DATA: Data = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/", icon: HomeIcon, label: "About" },
+    { href: "/", icon: HomeIcon, label: "Works" },
+    { href: "/", icon: HomeIcon, label: "Educations" },
+    { href: "/", icon: HomeIcon, label: "Certifications" },
     { href: "#projects", icon: CodeIcon, label: "Projects" },
   ],
   contact: {
@@ -145,191 +148,192 @@ export const DATA: Data = {
       end: "2008",
     },
   ],
-  projects: [{
-    title: "Solana Decentralized Application",
-    href: "",
-    dates: "August 2024",
-    active: true,
-    description:
-      "",
-    technologies: ["React.js", "Next.js", "Typescript", "Solana"],
-    links: [
-      {
-        type: "Website",
-        href: "",
-        icon: <Icons.globe className="size-3" />,
-      },
-    ],
-    image: "",
-    video:
-      "",
-  },
-  {
-    title: "Raydium Sniper Bot",
-    href: "",
-    dates: "September 2024",
-    active: true,
-    description:
-      "The bot listens for new liquidity pools on Raydium (DEX) on Solana. When a new token is created, it executes transactions when predefined conditions are met.",
-    technologies: [
-      "Node.js",
-      "Typescript",
-      "Solana",
-      "Raydium"
-    ],
-    links: [
-      {
-        type: "GitHub",
-        href: "",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/solana-sniper-trading-bot.png",
-    video:
-      "",
-  },
+  projects: [
+    {
+      title: "Solana Decentralized Application",
+      href: "",
+      dates: "August 2024",
+      active: true,
+      description:
+        "",
+      technologies: ["React.js", "Next.js", "Typescript", "Solana"],
+      links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "",
+    },
+    {
+      title: "Raydium Sniper Bot",
+      href: "",
+      dates: "September 2024",
+      active: true,
+      description:
+        "The bot listens for new liquidity pools on Raydium (DEX) on Solana. When a new token is created, it executes transactions when predefined conditions are met.",
+      technologies: [
+        "Node.js",
+        "Typescript",
+        "Solana",
+        "Raydium"
+      ],
+      links: [
+        {
+          type: "GitHub",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/solana-sniper-trading-bot.png",
+      video:
+        "",
+    },
   ],
-  hackathons: [
+  certifications: [
     {
       title: "Mastering Next.js with TypeScript",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Everything you need to build full-stack applications with Next.js 13+ (App Router) and TypeScript",
       image:
         "/nextjs.svg",
       links: [],
     },
     {
       title: "React 18: Intermediate Topics",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Take your React skills to the next level by mastering state management and routing.",
       image:
         "/react.svg",
       links: [],
     },
     {
       title: "React 18 for Beginners",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "A step-by-step guide to building web apps with React 18+ and TypeScript.",
       image:
         "/react.svg",
       links: [],
     },
     {
       title: "The Ultimate Docker Course",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Everything you need to master Docker in one clear, concise, and practical course.",
       image:
         "/docker.svg",
       links: [],
     },
     {
       title: "The Ultimate Git Course",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Everything you need to know to use Git & GitHub to work effectively as a team.",
       image:
         "/git.svg",
       links: [],
     },
     {
       title: "The Complete SQL Course",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Everything you need to design and query databases in one course.",
       image:
         "/sql.svg",
       links: [],
     },
     {
       title: "The Complete Node.js Course",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Learn to build highly-scalable, fast and secure RESTful APIs with Node, Express, and MongoDB.",
       image:
         "/nodejs.svg",
       links: [],
     },
     {
       title: "The Ultimate TypeScript Course",
-      dates: "Waiting...",
+      state: "Waiting",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Learn to make your JavaScript applications scale.",
       image:
         "/typescript.svg",
       links: [],
     },
     {
       title: "Ultimate JavaScript Part2: Advanced Topics",
-      dates: "Waiting...",
+      state: "Progress",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Level up your JavaScript skills and prepare for technical interviews.",
       image:
         "/javascript.svg",
       links: [],
     },
     {
       title: "Ultimate JavaScript Part1: Fundamentals",
-      dates: "Completed",
+      state: "Completed",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Master the fundamentals of programming in JavaScript.",
       image:
         "/javascript.svg",
       links: [],
     },
     {
       title: "Ultimate HTML & CSS: Part 3",
-      dates: "Completed",
+      state: "Completed",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Learn to convert Photoshop design mockups into real websites.",
       image:
         "/html.svg",
       links: [],
     },
     {
       title: "Ultimate HTML & CSS: Part 2",
-      dates: "Completed",
+      state: "Completed",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Master advanced HTML5 & CSS3 concepts behind fast, beautiful and mobile-friendly websites.",
       image:
         "/html.svg",
       links: [],
     },
     {
       title: "Ultimate HTML & CSS: Part 1",
-      dates: "Completed",
+      state: "Completed",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Master the fundamentals of web development with HTML5 & CSS3.",
       image:
         "/html.svg",
       links: [],
     },
     {
       title: "Ultimate Java Part3: Advanced Topics",
-      dates: "Completed",
+      state: "Completed",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "All about Exceptions, Generics, Collections, Lambdas, Streams, Multi-threading and Asynchronous Programming.",
       image:
         "/java.svg",
       links: [],
     },
     {
       title: "Ultimate Java Part2: Object-Oriented Programming",
-      dates: "Completed",
+      state: "Completed",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Learn to build robust, maintainable software with object-oriented programming techniques.",
       image:
         "/java.svg",
       links: [],
     },
     {
       title: "Ultimate Java Part1: Fundamentals",
-      dates: "Completed",
+      state: "Completed",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Discover Java - the most popular programming language underpinning most apps and websites.",
       image:
         "/java.svg",
       links: [],

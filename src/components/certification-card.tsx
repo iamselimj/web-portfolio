@@ -5,7 +5,7 @@ import Link from "next/link";
 interface Props {
   title: string;
   description: string;
-  dates: string;
+  state: string;
   location?: string;
   image?: string;
   links?: readonly {
@@ -18,7 +18,7 @@ interface Props {
 export function CertificationCard({
   title,
   description,
-  dates,
+  state,
   image,
   links,
 }: Props) {
@@ -31,8 +31,19 @@ export function CertificationCard({
         </Avatar>
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
-        {dates && (
-          <time className="text-xs text-muted-foreground">{dates}</time>
+        {state && (
+          <span
+            className={`text-xs ${state === "Completed"
+              ? "text-green-400"
+              : state === "Waiting"
+                ? "text-orange-400"
+                : state === "Progress"
+                  ? "text-yellow-400"
+                  : "text-muted-foreground"
+              }`}
+          >
+            {state}
+          </span>
         )}
         <h2 className="font-semibold leading-none">{title}</h2>
         {description && (
@@ -41,18 +52,20 @@ export function CertificationCard({
           </span>
         )}
       </div>
-      {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-          {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
-                {link.icon}
-                {link.title}
-              </Badge>
-            </Link>
-          ))}
-        </div>
-      )}
-    </li>
+      {
+        links && links.length > 0 && (
+          <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
+            {links?.map((link, idx) => (
+              <Link href={link.href} key={idx}>
+                <Badge key={idx} title={link.title} className="flex gap-2">
+                  {link.icon}
+                  {link.title}
+                </Badge>
+              </Link>
+            ))}
+          </div>
+        )
+      }
+    </li >
   );
 }

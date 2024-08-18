@@ -12,9 +12,14 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <section>
+        <BlurFade delay={BLUR_FADE_DELAY}>
+          <p>D3.js</p>
+        </BlurFade>
+      </section>
       <section id="hero">
         <div className="mx-auto w-full max-w-3xl space-y-8">
-          <div className="gap-2 flex justify-between">
+          <div className="gap-2 flex justify-between items-center">
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -29,13 +34,20 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-28 border rounded-full">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
         </div>
+      </section>
+      <section id="coordinates">
+        <BlurFade delay={BLUR_FADE_DELAY} className="space-y-2">
+          <p>{DATA.location}</p>
+          <p>{DATA.contact.tel}</p>
+          <p>{DATA.contact.email}</p>
+        </BlurFade>
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
@@ -72,7 +84,6 @@ export default function Page() {
           ))}
         </div>
       </section>
-
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -101,35 +112,30 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                <div className="inline-block rounded-lg bg-indigo-400 text-white px-3 py-1 text-sm">
                   Certifications
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like learning new things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  Here&apos;s all the official paid certifications I&apos;ve gained during my learning path. There are still many things I would like to learn in order to become the developer I always wanted to be.
                 </p>
               </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.certifications.map((certificate, id) => (
                 <BlurFade
-                  key={project.title + project.dates}
+                  key={certificate.title + certificate.state}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
                   <CertificationCard
-                    title={project.title}
-                    description={project.description}
-                    dates={project.dates}
-                    image={project.image}
+                    title={certificate.title}
+                    description={certificate.description}
+                    state={certificate.state}
+                    image={certificate.image}
                   />
                 </BlurFade>
               ))}
@@ -142,8 +148,8 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
+                <div className="inline-block rounded-lg bg-indigo-400 text-white px-3 py-1 text-sm">
+                  Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
@@ -182,7 +188,7 @@ export default function Page() {
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              <div className="inline-block rounded-lg bg-indigo-400 text-white px-3 py-1 text-sm">
                 Contact
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
