@@ -75,7 +75,7 @@ export const DATA: Data = {
       badges: [],
       location: "",
       title: "CFITech",
-      logoUrl: "/CFITech.png",
+      logoUrl: "/cfitech.png",
       start: "2020",
       end: "2021",
       description:
