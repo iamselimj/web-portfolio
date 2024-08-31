@@ -196,7 +196,7 @@ export const DATA: Data = {
   certifications: [
     {
       title: "Mastering Next.js with TypeScript",
-      state: "Waiting",
+      state: "Progress",
       description:
         "Everything you need to build full-stack applications with Next.js 13+ (App Router) and TypeScript",
       image:
@@ -205,7 +205,7 @@ export const DATA: Data = {
     },
     {
       title: "React 18: Intermediate Topics",
-      state: "Waiting",
+      state: "Progress",
       description:
         "Take your React skills to the next level by mastering state management and routing.",
       image:
@@ -214,7 +214,7 @@ export const DATA: Data = {
     },
     {
       title: "React 18 for Beginners",
-      state: "Waiting",
+      state: "Progress",
       description:
         "A step-by-step guide to building web apps with React 18+ and TypeScript.",
       image:
@@ -223,7 +223,7 @@ export const DATA: Data = {
     },
     {
       title: "The Ultimate Docker Course",
-      state: "Waiting",
+      state: "Progress",
       description:
         "Everything you need to master Docker in one clear, concise, and practical course.",
       image:
@@ -232,7 +232,7 @@ export const DATA: Data = {
     },
     {
       title: "The Ultimate Git Course",
-      state: "Waiting",
+      state: "Progress",
       description:
         "Everything you need to know to use Git & GitHub to work effectively as a team.",
       image:
@@ -241,7 +241,7 @@ export const DATA: Data = {
     },
     {
       title: "The Complete SQL Course",
-      state: "Waiting",
+      state: "Progress",
       description:
         "Everything you need to design and query databases in one course.",
       image:
@@ -250,7 +250,7 @@ export const DATA: Data = {
     },
     {
       title: "The Complete Node.js Course",
-      state: "Waiting",
+      state: "Progress",
       description:
         "Learn to build highly-scalable, fast and secure RESTful APIs with Node, Express, and MongoDB.",
       image:
@@ -259,7 +259,7 @@ export const DATA: Data = {
     },
     {
       title: "The Ultimate TypeScript Course",
-      state: "Waiting",
+      state: "Progress",
       description:
         "Learn to make your JavaScript applications scale.",
       image:
