@@ -14,7 +14,7 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section>
         <BlurFade delay={BLUR_FADE_DELAY}>
-          <p>D3.js</p>
+          <></>
         </BlurFade>
       </section>
       <section id="hero">
@@ -42,13 +42,13 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="coordinates">
+      {/* <section id="coordinates">
         <BlurFade delay={BLUR_FADE_DELAY} className="space-y-2">
           <p>{DATA.location}</p>
           <p>{DATA.contact.tel}</p>
           <p>{DATA.contact.email}</p>
         </BlurFade>
-      </section>
+      </section> */}
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-2xl font-bold">About</h2>

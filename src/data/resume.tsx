@@ -9,7 +9,7 @@ export const DATA: Data = {
   location: "Brussels, BE",
   locationLink: "https://www.google.com/maps/place/brussels",
   description:
-    "The Modern Full-Stack TypeScript Developer",
+    "The Modern Full-Stack Developer",
   summary:
     "I'm a self-taught full stack developer. I've learned everything by myself after work & during my free times, using all the free & paid ressources at my disposal. I followed a lot of tutorials on YouTube, some paid courses with the best teacher in the world and of course, a lot of pratical exercices & projects, not to mention the hours spent reading documentation and debugging code.",
   avatarUrl: "/me.jpg",
