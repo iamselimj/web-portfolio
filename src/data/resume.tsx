@@ -150,25 +150,6 @@ export const DATA: Data = {
   ],
   projects: [
     {
-      title: "Solana Decentralized Application",
-      href: "",
-      dates: "August 2024",
-      active: true,
-      description:
-        "",
-      technologies: ["React.js", "Next.js", "Typescript", "Solana"],
-      links: [
-        {
-          type: "Website",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "",
-    },
-    {
       title: "Raydium Sniper Bot",
       href: "",
       dates: "September 2024",
@@ -189,6 +170,25 @@ export const DATA: Data = {
         },
       ],
       image: "/solana-sniper-trading-bot.png",
+      video:
+        "",
+    },
+    {
+      title: "Solana Decentralized Application",
+      href: "",
+      dates: "August 2024",
+      active: true,
+      description:
+        "",
+      technologies: ["React.js", "Next.js", "Typescript", "Solana"],
+      links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
       video:
         "",
     },
