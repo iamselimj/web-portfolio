@@ -14,10 +14,11 @@ export const DATA: Data = {
     "I'm a self-taught full stack developer. I've learned everything by myself after work & during my free times, using all the free & paid ressources at my disposal. I followed a lot of tutorials on YouTube, some paid courses with the best teacher in the world and of course, a lot of pratical exercices & projects, not to mention the hours spent reading documentation and debugging code.",
   avatarUrl: "/me.jpg",
   skills: [
-    "React",
-    "Next.js",
+    "C/C++",
     "Typescript",
     "Node.js",
+    "React",
+    "Next.js",
     "Solidity",
     "SQL",
     "Docker",
@@ -194,6 +195,105 @@ export const DATA: Data = {
     },
   ],
   certifications: [
+    {
+      title: "Mastering Design Patterns: Part 3",
+      state: "Progress",
+      description:
+        "Mastering creational design patterns: A comprehensive guide for developers",
+      image:
+        "/java.svg",
+      links: [],
+    },
+    {
+      title: "Mastering Design Patterns: Part 2",
+      state: "Progress",
+      description:
+        "Structural design patterns: The essential building blocks of object-oriented programming",
+      image:
+        "/java.svg",
+      links: [],
+    },
+    {
+      title: "Mastering Design Patterns: Part 1",
+      state: "Progress",
+      description:
+        "Writing robust code: A deep dive into Behavioral Design Patterns",
+      image:
+        "/java.svg",
+      links: [],
+    },
+    {
+      title: "Ultimate Data Structures & Algorithms: Part 3",
+      state: "Progress",
+      description:
+        "Ace your coding job interview. Learn to write better and faster code.",
+      image:
+        "/java.svg",
+      links: [],
+    },
+    {
+      title: "Ultimate Data Structures & Algorithms: Part 2",
+      state: "Progress",
+      description:
+        "Ace your coding job interview. Learn to write better and faster code.",
+      image:
+        "/java.svg",
+      links: [],
+    },
+    {
+      title: "Ultimate Data Structures & Algorithms: Part 1",
+      state: "Progress",
+      description:
+        "Ace your coding job interview. Learn to write better and faster code.",
+      image:
+        "/java.svg",
+      links: [],
+    },
+    {
+      title: "The Ultimate Django Series",
+      state: "Progress",
+      description:
+        "From zero to hero: Learn to build fast and secure APIs with Django and MySQL",
+      image:
+        "/django.svg",
+      links: [],
+    },
+    {
+      title: "Complete Python Mastery",
+      state: "Progress",
+      description:
+        "Everything you need to program in Python in one course (includes 3 real-world projects)",
+      image:
+        "/python.svg",
+      links: [],
+    },
+    {
+      title: "Ultimate C++ Part 3: Advanced",
+      state: "Progress",
+      description:
+        "Master object-oriented programming with C++. Learn all about classes, inheritance, exceptions, templates and more.",
+      image:
+        "/cpp.svg",
+      links: [],
+    },
+    {
+      title: "Ultimate C++ Part 2: Intermediate",
+      state: "Progress",
+      description:
+        "Take your C++ skills to the next level. Master arrays, pointers, strings, structures, and streams.",
+      image:
+        "/cpp.svg",
+      links: [],
+    },
+    {
+      title: "Ultimate C++ Part 1: Fundamentals",
+      state: "Progress",
+      description:
+        "Master the fundamentals of C++ - the most popular programming language underpinning most games and high-performance apps",
+      image:
+        "/cpp.svg",
+      links: [],
+    },
     {
       title: "Mastering Next.js with TypeScript",
       state: "Progress",
